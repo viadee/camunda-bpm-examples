@@ -1,4 +1,4 @@
-# Camunda Process Engine and Spring Boot
+# Camunda Process Engine and Spring Boot (vPAV)
 
 This example demonstrates how to bootstrap the Camunda process engine with [Spring Boot](http://projects.spring.io/spring-boot/). You learn
 
@@ -22,6 +22,28 @@ The example process looks like:
 ### Run it as JUnit Test  
 
 The JUnit test [CamundaSpringBootExampleApplicationTest](src/test/java/org/camunda/bpm/example/CamundaSpringBootExampleApplicationTest.java) starts the application and verify that it starts a process instance.
+
+## vPAV
+Edited the `pom.xml` and `CamundaSpringBootExampleApplicationTest.java` files to integrate the vPAV.
+
+```xml
+    <!-- viadee Process Application Validator -->
+    <dependency>
+  		<groupId>de.viadee</groupId>
+  		<artifactId>viadeeProcessApplicationValidator</artifactId>
+  		<version>...</version>
+	</dependency>
+```
+```java
+    @Autowired
+    private ApplicationContext ctx;
+
+    @Test
+    public void validateModel() {
+        assertTrue("Model inconsistency found. Please check target folder for validation output",
+                ProcessApplicationValidator.findModelInconsistencies(ctx).isEmpty());
+    }
+```
 
 ## How it works
 
