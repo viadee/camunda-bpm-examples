@@ -1,4 +1,4 @@
-Simple Servlet Process Application Example
+Simple Servlet Process Application Example (vPAV)
 ==========================================
 
 This example demonstrates how to deploy a simple servlet process application.
