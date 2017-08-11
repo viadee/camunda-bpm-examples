@@ -1,4 +1,4 @@
-# Serialized Objects in Embedded Forms
+# Serialized Objects in Embedded Forms (vPAV)
 
 This example demonstrates how to work with serialized Java objects in embedded forms.
 
@@ -9,6 +9,28 @@ This example demonstrates how to work with serialized Java objects in embedded f
 The process is kicked off by a form where the user is supposed to provide data about a customer.
 The process then attempts to calculate a rating using a Java Class. If the rating cannot be
 calculated automatically, a usertask is created and the user has to calculate the rating manually.
+
+## vPAV
+Modified the `pom.xml` and added a new test-class `ModelConsistencyTest.java`
+
+```xml
+  <!-- viadee Process Application Validator -->
+  <dependency>
+  		<groupId>de.viadee</groupId>
+  		<artifactId>viadeeProcessApplicationValidator</artifactId>
+  		<version>...</version>
+	</dependency>
+```
+```java
+public class ModelConsistencyTest {
+
+    @Test
+    public void validateModel() {
+        assertTrue("Model inconsistency found. Please check target folder for validation output",
+                ProcessApplicationValidator.findModelInconsistencies().isEmpty());
+    }
+}
+```
 
 ## Modeling data as Java Objects
 
