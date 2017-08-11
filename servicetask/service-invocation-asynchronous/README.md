@@ -1,4 +1,4 @@
-# Asynchronous Service Invocation
+# Asynchronous Service Invocation (vPAV)
 
 > **Warning:** this example demonstrates an advanced usage pattern of the process engine based on internal (non-public) API. Similar behavior can be achieved using a send task and a receive task. The latter option is recommended in most usecases.
 
@@ -12,6 +12,29 @@ After having looked through the code, you will understand the behavior of an asy
 
 * Successful invocation
 * A service failure.
+
+## vPAV
+Modified the `pom.xml` and `TestAsynchronousServiceTask.java` files
+
+```xml
+  <!-- viadee Process Application Validator -->
+  <dependency>
+  		<groupId>de.viadee</groupId>
+  		<artifactId>viadeeProcessApplicationValidator</artifactId>
+  		<version>...</version>
+	</dependency>
+```
+
+```java
+public class ModelConsistencyTest {
+
+    @Test
+    public void validateModel() {
+        assertTrue("Model inconsistency found. Please check target folder for validation output",
+                ProcessApplicationValidator.findModelInconsistencies().isEmpty());
+    }
+}
+```
 
 ## Show me the important parts!
 

@@ -1,4 +1,4 @@
-# Multi-Tenancy with Tenant Identifiers for Embedded Process Engine
+# Multi-Tenancy with Tenant Identifiers for Embedded Process Engine (vPAV)
 
 This example demonstrates how to use multi-tenancy for an embedded process engine. You learn
 
@@ -9,6 +9,28 @@ This example demonstrates how to use multi-tenancy for an embedded process engin
 The example process for the tenants looks like:
 
 ![Example Process for Tenant](docs/process.png)
+
+## vPAV
+Modified the `pom.xml` and added a new test-class `TenantIdentifierTest.java`
+
+```xml
+  <!-- viadee Process Application Validator -->
+  <dependency>
+  		<groupId>de.viadee</groupId>
+  		<artifactId>viadeeProcessApplicationValidator</artifactId>
+  		<version>...</version>
+	</dependency>
+```
+```java
+public class ModelConsistencyTest {
+
+    @Test
+    public void validateModel() {
+        assertTrue("Model inconsistency found. Please check target folder for validation output",
+                ProcessApplicationValidator.findModelInconsistencies().isEmpty());
+    }
+}
+```
 
 ## How it works
 
