@@ -1,7 +1,7 @@
 <ruleSet>
 	<rule>
 		<name>ProcessVariablesLocation</name>
-		<state>false</state>
+		<state>true</state>
 		<settings>
 			<setting name="location"></setting>
 		</settings>
