@@ -45,10 +45,10 @@
     
     <!-- viadee Process Application Validator -->
     <dependency>
-  		<groupId>de.viadee</groupId>
-  		<artifactId>viadeeProcessApplicationValidator</artifactId>
-  		<version>2.2.1-SNAPSHOT</version>
-	</dependency>
+  	<groupId>de.viadee</groupId>
+  	<artifactId>viadeeProcessApplicationValidator</artifactId>
+  	<version>2.5.0</version>
+    </dependency>
 
   </dependencies>
 
