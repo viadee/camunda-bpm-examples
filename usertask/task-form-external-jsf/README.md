@@ -39,12 +39,12 @@ The following is the source code of the JSF form used to start the process (the 
     <h:form id="submitForm">
       <h:panelGrid columns="2">
         <p>
-          <label for="firstname">Firstname</label>
+          <label for="firstname">First Name</label>
           <!-- create process variables using the processVariables map. -->
           <h:inputText id="firstname" value="#{processVariables['firstname']}" required="true" />
         </p>
         <p>
-          <label for="lastname">Lastname</label>
+          <label for="lastname">Last Name</label>
           <h:inputText id="lastname" value="#{processVariables['lastname']}" required="true" />
         </p>
         <p>
@@ -134,4 +134,4 @@ For more detailed information about External Task Forms, see [JSF Task Forms][6]
 [3]: docs/screenshot-modeler.png
 [4]: src/main/webapp
 [5]: https://docs.camunda.org/manual/user-guide/task-forms/#external-task-forms
-[6]: https://docs.camunda.org/manual/examples/tutorials/jsf-task-forms/
+[6]: https://docs.camunda.org/manual/user-guide/task-forms/jsf-task-forms/
