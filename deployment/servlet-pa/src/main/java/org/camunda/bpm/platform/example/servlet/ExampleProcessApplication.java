@@ -16,12 +16,12 @@
  */
 package org.camunda.bpm.platform.example.servlet;
 
-import javax.servlet.ServletContextListener;
-
 import org.camunda.bpm.application.PostDeploy;
 import org.camunda.bpm.application.ProcessApplication;
 import org.camunda.bpm.application.impl.ServletProcessApplication;
 import org.camunda.bpm.engine.ProcessEngine;
+
+import javax.servlet.ServletContextListener;
 
 /**
  * <p>This class transforms your regular java web application

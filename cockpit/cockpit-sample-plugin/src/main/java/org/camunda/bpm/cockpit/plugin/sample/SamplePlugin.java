@@ -16,13 +16,13 @@
  */
 package org.camunda.bpm.cockpit.plugin.sample;
 
+import org.camunda.bpm.cockpit.plugin.sample.resources.SamplePluginRootResource;
+import org.camunda.bpm.cockpit.plugin.spi.impl.AbstractCockpitPlugin;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.camunda.bpm.cockpit.plugin.sample.resources.SamplePluginRootResource;
-import org.camunda.bpm.cockpit.plugin.spi.impl.AbstractCockpitPlugin;
 
 /**
  *

@@ -16,15 +16,7 @@
  */
 package org.camunda.quickstart.servicetask.invocation.sync;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
-import static junit.framework.Assert.fail;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Map;
-
+import de.viadee.bpm.vPAV.ProcessApplicationValidator;
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.TaskService;
@@ -39,7 +31,11 @@ import org.camunda.quickstart.servicetask.invocation.MockMessageQueue.Message;
 import org.junit.Rule;
 import org.junit.Test;
 
-import de.viadee.bpm.vPAV.ProcessApplicationValidator;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Map;
+
+import static junit.framework.Assert.*;
 
 /**
  * Test case for demonstrating the asynchronous service invocation.

@@ -16,10 +16,10 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
-import java.util.logging.Logger;
-
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+
+import java.util.logging.Logger;
 
 /**
  * Sample service task which logs the tenant-id of the execution.

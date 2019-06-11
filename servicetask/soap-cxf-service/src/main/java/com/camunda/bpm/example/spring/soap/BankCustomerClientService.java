@@ -17,14 +17,9 @@
 package com.camunda.bpm.example.spring.soap;
 
 
+import com.camunda.bpm.example.spring.soap.v1.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.camunda.bpm.example.spring.soap.v1.BankCustomerServicePortType;
-import com.camunda.bpm.example.spring.soap.v1.BankException_Exception;
-import com.camunda.bpm.example.spring.soap.v1.BankRequestHeader;
-import com.camunda.bpm.example.spring.soap.v1.GetAccountsRequest;
-import com.camunda.bpm.example.spring.soap.v1.GetAccountsResponse;
 
 /**
  * 

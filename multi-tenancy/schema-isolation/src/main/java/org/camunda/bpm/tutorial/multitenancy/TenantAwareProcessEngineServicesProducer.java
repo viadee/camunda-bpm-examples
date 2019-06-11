@@ -16,31 +16,18 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
+import org.camunda.bpm.BpmPlatform;
+import org.camunda.bpm.engine.*;
+import org.camunda.bpm.engine.cdi.impl.ProcessEngineServicesProducer;
+import org.camunda.bpm.engine.impl.context.Context;
+import org.camunda.bpm.engine.impl.interceptor.CommandContext;
+
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.Specializes;
 import javax.inject.Inject;
 import javax.inject.Named;
-
-import org.camunda.bpm.BpmPlatform;
-import org.camunda.bpm.engine.AuthorizationService;
-import org.camunda.bpm.engine.CaseService;
-import org.camunda.bpm.engine.DecisionService;
-import org.camunda.bpm.engine.ExternalTaskService;
-import org.camunda.bpm.engine.FilterService;
-import org.camunda.bpm.engine.FormService;
-import org.camunda.bpm.engine.HistoryService;
-import org.camunda.bpm.engine.IdentityService;
-import org.camunda.bpm.engine.ManagementService;
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.ProcessEngineException;
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.cdi.impl.ProcessEngineServicesProducer;
-import org.camunda.bpm.engine.impl.context.Context;
-import org.camunda.bpm.engine.impl.interceptor.CommandContext;
 
 /**
  * @author Thorben Lindhauer

@@ -16,13 +16,6 @@
  */
 package org.camunda.bpm;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.File;
-import java.util.List;
-
-import javax.inject.Inject;
-
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -32,6 +25,12 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import javax.inject.Inject;
+import java.io.File;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Arquillian.class)
 public class ArquillianTest {

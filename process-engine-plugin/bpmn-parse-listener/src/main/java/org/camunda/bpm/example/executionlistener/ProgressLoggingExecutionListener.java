@@ -16,12 +16,12 @@
  */
 package org.camunda.bpm.example.executionlistener;
 
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.ExecutionListener;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
-
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.ExecutionListener;
 
 /**
  * Execution listener to log property extension value

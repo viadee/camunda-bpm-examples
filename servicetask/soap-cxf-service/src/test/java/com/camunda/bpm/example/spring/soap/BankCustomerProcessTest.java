@@ -16,31 +16,7 @@
  */
 package com.camunda.bpm.example.spring.soap;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.reset;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.PropertyException;
-import javax.xml.namespace.QName;
-import javax.xml.transform.dom.DOMResult;
-import javax.xml.ws.Endpoint;
-
+import com.camunda.bpm.example.spring.soap.v1.*;
 import org.apache.cxf.binding.soap.SoapFault;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.camunda.bpm.engine.HistoryService;
@@ -52,11 +28,7 @@ import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.camunda.bpm.engine.variable.value.ObjectValue;
 import org.camunda.bpm.engine.variable.value.StringValue;
 import org.camunda.bpm.engine.variable.value.TypedValue;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -69,12 +41,22 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.w3c.dom.Element;
 
-import com.camunda.bpm.example.spring.soap.v1.BankCustomerServicePortType;
-import com.camunda.bpm.example.spring.soap.v1.BankException;
-import com.camunda.bpm.example.spring.soap.v1.BankException_Exception;
-import com.camunda.bpm.example.spring.soap.v1.BankRequestHeader;
-import com.camunda.bpm.example.spring.soap.v1.GetAccountsRequest;
-import com.camunda.bpm.example.spring.soap.v1.GetAccountsResponse;
+import javax.xml.bind.*;
+import javax.xml.namespace.QName;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.ws.Endpoint;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.*;
 
 /**
  * 

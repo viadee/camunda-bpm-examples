@@ -16,8 +16,6 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
-import java.util.List;
-
 import org.camunda.bpm.engine.IdentityService;
 import org.camunda.bpm.engine.impl.cfg.multitenancy.TenantIdProvider;
 import org.camunda.bpm.engine.impl.cfg.multitenancy.TenantIdProviderCaseInstanceContext;
@@ -25,6 +23,8 @@ import org.camunda.bpm.engine.impl.cfg.multitenancy.TenantIdProviderHistoricDeci
 import org.camunda.bpm.engine.impl.cfg.multitenancy.TenantIdProviderProcessInstanceContext;
 import org.camunda.bpm.engine.impl.context.Context;
 import org.camunda.bpm.engine.impl.identity.Authentication;
+
+import java.util.List;
 
 /**
  * Provides the tenant-id based on the current authenticated tenant.

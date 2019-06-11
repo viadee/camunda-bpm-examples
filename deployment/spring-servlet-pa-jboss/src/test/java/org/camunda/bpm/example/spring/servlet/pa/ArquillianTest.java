@@ -16,19 +16,9 @@
  */
 package org.camunda.bpm.example.spring.servlet.pa;
 
-import java.io.File;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import org.camunda.bpm.BpmPlatform;
 import org.camunda.bpm.ProcessEngineService;
-import org.camunda.bpm.engine.HistoryService;
-import org.camunda.bpm.engine.ManagementService;
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.ProcessEngineException;
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.*;
 import org.camunda.bpm.engine.impl.ProcessEngineImpl;
 import org.camunda.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl;
 import org.camunda.bpm.engine.impl.jobexecutor.JobExecutor;
@@ -46,6 +36,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import java.io.File;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 @RunWith(Arquillian.class)
 public class ArquillianTest {

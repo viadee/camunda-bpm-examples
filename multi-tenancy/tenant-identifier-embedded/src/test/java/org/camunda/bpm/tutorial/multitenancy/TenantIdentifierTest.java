@@ -16,13 +16,7 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-
+import de.viadee.bpm.vPAV.ProcessApplicationValidator;
 import org.camunda.bpm.engine.RepositoryService;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.repository.Deployment;
@@ -33,7 +27,12 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
-import de.viadee.bpm.vPAV.ProcessApplicationValidator;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class TenantIdentifierTest {
 

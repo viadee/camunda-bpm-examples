@@ -16,8 +16,6 @@
  */
 package org.camunda.bpm.example.test;
 
-import static org.junit.Assert.assertEquals;
-
 import org.camunda.bpm.engine.HistoryService;
 import org.camunda.bpm.engine.RepositoryService;
 import org.camunda.bpm.engine.RuntimeService;
@@ -31,6 +29,8 @@ import org.camunda.bpm.model.bpmn.instance.camunda.CamundaProperty;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Test Bpmn Parse listener as process engine plugin and

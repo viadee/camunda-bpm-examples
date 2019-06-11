@@ -16,8 +16,6 @@
  */
 package org.camunda.bpm.example.xsltexample;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import org.camunda.bpm.engine.HistoryService;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.test.Deployment;
@@ -25,6 +23,8 @@ import org.camunda.bpm.engine.test.ProcessEngineRule;
 import org.camunda.commons.utils.IoUtil;
 import org.junit.Rule;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author Stefan Hentschel.

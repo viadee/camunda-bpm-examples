@@ -16,11 +16,11 @@
  */
 package org.camunda.bpm.example.spring.jboss;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.camunda.bpm.engine.ProcessEngine;
 import org.springframework.beans.factory.InitializingBean;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Daniel Meyer

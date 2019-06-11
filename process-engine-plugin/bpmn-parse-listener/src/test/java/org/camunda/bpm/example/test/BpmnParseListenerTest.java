@@ -16,11 +16,6 @@
  */
 package org.camunda.bpm.example.test;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.IOException;
-import java.util.List;
-
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.camunda.bpm.engine.test.Deployment;
@@ -30,6 +25,11 @@ import org.camunda.bpm.example.delegate.ServiceTaskTwoDelegate;
 import org.camunda.bpm.example.executionlistener.ProgressLoggingExecutionListener;
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Test Bpmn Parse listener as process engine plugin and

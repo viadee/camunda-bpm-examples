@@ -16,14 +16,14 @@
  */
 package org.camunda.bpm.example.engine;
 
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.logging.Logger;
-
 import org.camunda.bpm.engine.impl.interceptor.Command;
 import org.camunda.bpm.engine.impl.interceptor.CommandInterceptor;
 import org.camunda.bpm.example.engine.cmd.EndBlockingCmd;
 import org.camunda.bpm.example.engine.cmd.StartBlockingCmd;
 import org.camunda.bpm.example.engine.cmd.UnblockedCommand;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.logging.Logger;
 
 /**
  * A {@link CommandInterceptor} which throws exceptions if {@link #shouldBlock} is enabled.

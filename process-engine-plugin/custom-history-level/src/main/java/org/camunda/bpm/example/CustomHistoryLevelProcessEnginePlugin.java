@@ -16,12 +16,12 @@
  */
 package org.camunda.bpm.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.camunda.bpm.engine.impl.cfg.AbstractProcessEnginePlugin;
 import org.camunda.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl;
 import org.camunda.bpm.engine.impl.history.HistoryLevel;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CustomHistoryLevelProcessEnginePlugin extends AbstractProcessEnginePlugin {
 

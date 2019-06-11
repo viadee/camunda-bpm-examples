@@ -16,10 +16,6 @@
  */
 package org.camunda.bpm.example;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.InputStream;
-
 import org.camunda.bpm.dmn.engine.DmnDecision;
 import org.camunda.bpm.dmn.engine.DmnDecisionTableResult;
 import org.camunda.bpm.dmn.engine.DmnEngine;
@@ -29,6 +25,10 @@ import org.camunda.bpm.engine.variable.Variables;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.io.InputStream;
+
+import static org.junit.Assert.assertEquals;
 
 public class DishDecisionTest {
 

@@ -16,20 +16,16 @@
  */
 package org.camunda.cycle.example;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.camunda.bpm.cycle.connector.Connector;
 import org.camunda.bpm.cycle.connector.ConnectorNode;
 import org.camunda.bpm.cycle.connector.ConnectorNodeType;
 import org.camunda.bpm.cycle.connector.ContentInformation;
 import org.camunda.bpm.cycle.entity.ConnectorConfiguration;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.util.*;
 
 /**
  * An example connector implementation which persists BPMN files to a

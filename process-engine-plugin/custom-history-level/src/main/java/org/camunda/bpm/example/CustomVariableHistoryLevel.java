@@ -16,13 +16,13 @@
  */
 package org.camunda.bpm.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.camunda.bpm.engine.impl.history.HistoryLevel;
 import org.camunda.bpm.engine.impl.history.event.HistoryEventType;
 import org.camunda.bpm.engine.impl.history.event.HistoryEventTypes;
 import org.camunda.bpm.engine.runtime.VariableInstance;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CustomVariableHistoryLevel implements HistoryLevel {
 

@@ -16,10 +16,10 @@
  */
 package org.camunda.bpm.quickstart.usertask;
 
-import javax.servlet.ServletContextListener;
-
 import org.camunda.bpm.application.ProcessApplication;
 import org.camunda.bpm.application.impl.ServletProcessApplication;
+
+import javax.servlet.ServletContextListener;
 
 /**
  * <p>This class transforms your regular java web application 

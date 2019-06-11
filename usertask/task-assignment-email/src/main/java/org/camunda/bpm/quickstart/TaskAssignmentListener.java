@@ -16,9 +16,6 @@
  */
 package org.camunda.bpm.quickstart;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.SimpleEmail;
 import org.camunda.bpm.engine.IdentityService;
@@ -26,6 +23,9 @@ import org.camunda.bpm.engine.delegate.DelegateTask;
 import org.camunda.bpm.engine.delegate.TaskListener;
 import org.camunda.bpm.engine.identity.User;
 import org.camunda.bpm.engine.impl.context.Context;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TaskAssignmentListener implements TaskListener {
 

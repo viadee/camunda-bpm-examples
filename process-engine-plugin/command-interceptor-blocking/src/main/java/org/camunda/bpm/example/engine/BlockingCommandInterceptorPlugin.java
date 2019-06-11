@@ -16,13 +16,13 @@
  */
 package org.camunda.bpm.example.engine;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.impl.cfg.AbstractProcessEnginePlugin;
 import org.camunda.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl;
 import org.camunda.bpm.engine.impl.interceptor.CommandInterceptor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Daniel Meyer

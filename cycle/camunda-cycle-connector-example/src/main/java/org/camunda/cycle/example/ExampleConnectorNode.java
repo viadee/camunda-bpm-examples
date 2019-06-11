@@ -16,10 +16,10 @@
  */
 package org.camunda.cycle.example;
 
-import java.util.Date;
-
 import org.camunda.bpm.cycle.connector.ConnectorNode;
 import org.camunda.bpm.cycle.connector.ConnectorNodeType;
+
+import java.util.Date;
 
 /**
  * A connector Node which stores the content of the node

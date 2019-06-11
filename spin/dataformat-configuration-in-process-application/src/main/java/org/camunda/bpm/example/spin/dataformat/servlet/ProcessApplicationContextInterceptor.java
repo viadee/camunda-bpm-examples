@@ -16,13 +16,13 @@
  */
 package org.camunda.bpm.example.spin.dataformat.servlet;
 
+import org.camunda.bpm.application.ProcessApplicationContext;
+import org.camunda.bpm.application.ProcessApplicationInterface;
+
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
-
-import org.camunda.bpm.application.ProcessApplicationContext;
-import org.camunda.bpm.application.ProcessApplicationInterface;
 
 /**
  * Intercepts method invocations when the methods are annotated with {@link InProcessApplicationContext}.

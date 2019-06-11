@@ -16,8 +16,6 @@
  */
 package org.camunda.bpm.spring.boot.example.simple;
 
-import static org.slf4j.LoggerFactory.getLogger;
-
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.TaskService;
 import org.camunda.bpm.engine.task.Task;
@@ -26,6 +24,8 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
+
+import static org.slf4j.LoggerFactory.getLogger;
 
 @Component
 public class Showcase {

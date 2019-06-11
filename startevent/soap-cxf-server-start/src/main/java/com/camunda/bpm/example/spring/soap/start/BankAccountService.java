@@ -16,14 +16,7 @@
  */
 package com.camunda.bpm.example.spring.soap.start;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.annotation.PostConstruct;
-import javax.jws.WebService;
-
+import com.camunda.bpm.example.spring.soap.start.v1.*;
 import org.camunda.bpm.engine.FormService;
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.impl.form.validator.FormFieldValidatorException;
@@ -32,13 +25,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.camunda.bpm.example.spring.soap.start.v1.BankAccountServicePortType;
-import com.camunda.bpm.example.spring.soap.start.v1.BankRequestHeader;
-import com.camunda.bpm.example.spring.soap.start.v1.InvalidValueException;
-import com.camunda.bpm.example.spring.soap.start.v1.InvalidValueException_Exception;
-import com.camunda.bpm.example.spring.soap.start.v1.SetAccountNameRequest;
-import com.camunda.bpm.example.spring.soap.start.v1.SetAccountNameResponse;
-import com.camunda.bpm.example.spring.soap.start.v1.StatusType;
+import javax.annotation.PostConstruct;
+import javax.jws.WebService;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * 

@@ -16,11 +16,11 @@
  */
 package org.camunda.quickstart.servicetask.invocation;
 
-import java.util.Collections;
-import java.util.Map;
-
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.quickstart.servicetask.invocation.MockMessageQueue.Message;
+
+import java.util.Collections;
+import java.util.Map;
 
 /**
  * This class represents the actual business logic invoked by the service task.

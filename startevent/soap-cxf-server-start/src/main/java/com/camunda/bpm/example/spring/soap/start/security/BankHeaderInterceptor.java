@@ -16,11 +16,7 @@
  */
 package com.camunda.bpm.example.spring.soap.start.security;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.namespace.QName;
-
+import com.camunda.bpm.example.spring.soap.start.v1.BankRequestHeader;
 import org.apache.cxf.binding.soap.SoapMessage;
 import org.apache.cxf.binding.soap.interceptor.AbstractSoapInterceptor;
 import org.apache.cxf.headers.Header;
@@ -30,7 +26,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Node;
 
-import com.camunda.bpm.example.spring.soap.start.v1.BankRequestHeader;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.namespace.QName;
 
 /**
  * Simple CXF-interceptor for validating the {@linkplain BankRequestHeader} in incoming SOAP requests. <br/><br/>

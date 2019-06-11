@@ -16,9 +16,6 @@
  */
 package org.camunda.bpm.quickstart;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.camunda.bpm.engine.task.TaskQuery;
 import org.camunda.bpm.engine.test.ProcessEngineRule;
 import org.camunda.bpm.example.invoice.service.ArchiveInvoiceService;
@@ -27,6 +24,9 @@ import org.camunda.bpm.model.bpmn.BpmnModelInstance;
 import org.camunda.bpm.model.bpmn.GatewayDirection;
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Sebastian Menski

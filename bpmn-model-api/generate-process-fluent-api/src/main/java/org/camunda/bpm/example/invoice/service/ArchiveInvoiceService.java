@@ -16,10 +16,10 @@
  */
 package org.camunda.bpm.example.invoice.service;
 
-import java.util.logging.Logger;
-
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+
+import java.util.logging.Logger;
 
 /**
  * <p>This is an empty service implementation illustrating how to use a plain

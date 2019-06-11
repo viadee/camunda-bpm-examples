@@ -16,13 +16,8 @@
  */
 package org.camunda.bpm.example.spin.dataformat.servlet;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import javax.interceptor.InterceptorBinding;
+import java.lang.annotation.*;
 
 /**
  * Annotation that is used to declare methods that should be executed in

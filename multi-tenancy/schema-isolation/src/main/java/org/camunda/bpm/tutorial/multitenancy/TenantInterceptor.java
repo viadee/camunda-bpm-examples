@@ -16,21 +16,20 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.inject.Inject;
-import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.ext.Provider;
-
 import org.jboss.resteasy.annotations.interception.ServerInterceptor;
 import org.jboss.resteasy.core.ResourceMethod;
 import org.jboss.resteasy.core.ServerResponse;
 import org.jboss.resteasy.spi.Failure;
 import org.jboss.resteasy.spi.HttpRequest;
 import org.jboss.resteasy.spi.interception.PreProcessInterceptor;
+
+import javax.inject.Inject;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Response.Status;
+import javax.ws.rs.ext.Provider;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Thorben Lindhauer

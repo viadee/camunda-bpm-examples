@@ -16,15 +16,14 @@
  */
 package org.camunda.bpm.example.parselistener;
 
-import java.util.List;
-
-import org.camunda.bpm.application.impl.event.ProcessApplicationEventParseListener;
 import org.camunda.bpm.engine.delegate.ExecutionListener;
 import org.camunda.bpm.engine.impl.bpmn.parser.AbstractBpmnParseListener;
 import org.camunda.bpm.engine.impl.pvm.process.ActivityImpl;
 import org.camunda.bpm.engine.impl.pvm.process.ScopeImpl;
 import org.camunda.bpm.engine.impl.util.xml.Element;
 import org.camunda.bpm.example.executionlistener.ProgressLoggingExecutionListener;
+
+import java.util.List;
 
 /**
  * BPMN Parse Listener to parse extension properties on service task

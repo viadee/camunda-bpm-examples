@@ -16,15 +16,15 @@
  */
 package org.camunda.bpm.example;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 import org.camunda.bpm.dmn.engine.DmnDecision;
 import org.camunda.bpm.dmn.engine.DmnDecisionTableResult;
 import org.camunda.bpm.dmn.engine.DmnEngine;
 import org.camunda.bpm.dmn.engine.DmnEngineConfiguration;
 import org.camunda.bpm.engine.variable.VariableMap;
 import org.camunda.bpm.engine.variable.Variables;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class DishDecider {
 

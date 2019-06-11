@@ -16,12 +16,12 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 @Named
 public class SimpleServiceTask implements JavaDelegate {

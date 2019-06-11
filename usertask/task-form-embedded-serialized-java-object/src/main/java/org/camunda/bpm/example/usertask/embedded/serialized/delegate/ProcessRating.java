@@ -16,11 +16,11 @@
  */
 package org.camunda.bpm.example.usertask.embedded.serialized.delegate;
 
-import java.util.logging.Logger;
-
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.camunda.bpm.example.usertask.embedded.serialized.model.CustomerData;
+
+import java.util.logging.Logger;
 
 /**
  * @author Daniel Meyer

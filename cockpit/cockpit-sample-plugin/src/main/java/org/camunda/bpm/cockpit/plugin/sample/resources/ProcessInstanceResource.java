@@ -16,12 +16,12 @@
  */
 package org.camunda.bpm.cockpit.plugin.sample.resources;
 
-import java.util.List;
-import javax.ws.rs.GET;
-
 import org.camunda.bpm.cockpit.db.QueryParameters;
 import org.camunda.bpm.cockpit.plugin.resource.AbstractPluginResource;
 import org.camunda.bpm.cockpit.plugin.sample.db.ProcessInstanceCountDto;
+
+import javax.ws.rs.GET;
+import java.util.List;
 
 /**
  *

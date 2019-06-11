@@ -16,8 +16,6 @@
  */
 package org.camunda.bpm.example.spin.dataformat.servlet;
 
-import javax.enterprise.context.ApplicationScoped;
-
 import org.camunda.bpm.BpmPlatform;
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.RuntimeService;
@@ -25,6 +23,8 @@ import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.camunda.bpm.engine.variable.Variables;
 import org.camunda.bpm.example.spin.dataformat.configuration.Car;
 import org.camunda.spin.DataFormats;
+
+import javax.enterprise.context.ApplicationScoped;
 
 /**
  * @author Thorben Lindhauer

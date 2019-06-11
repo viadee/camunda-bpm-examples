@@ -16,11 +16,10 @@
  */
 package org.camunda.bpm.example.spin.dataformat.configuration;
 
-import org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat;
-import org.camunda.spin.spi.DataFormatConfigurator;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat;
+import org.camunda.spin.spi.DataFormatConfigurator;
 
 /**
  * This class is looked up by the Spin runtime when the data formats are initialized.

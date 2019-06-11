@@ -16,13 +16,13 @@
  */
 package org.camunda.quickstart.servicetask.invocation;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.camunda.bpm.engine.impl.bpmn.behavior.AbstractBpmnActivityBehavior;
 import org.camunda.bpm.engine.impl.pvm.delegate.ActivityExecution;
 import org.camunda.bpm.engine.impl.pvm.delegate.SignallableActivityBehavior;
 import org.camunda.quickstart.servicetask.invocation.MockMessageQueue.Message;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <p>This is a simple implementation of the {@link SignallableActivityBehavior}

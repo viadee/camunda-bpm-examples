@@ -16,10 +16,6 @@
  */
 package org.camunda.bpm.example;
 
-import java.io.IOException;
-
-import javax.sql.DataSource;
-
 import org.camunda.bpm.engine.spring.ProcessEngineFactoryBean;
 import org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration;
 import org.camunda.bpm.engine.spring.SpringProcessEngineServicesConfiguration;
@@ -32,6 +28,9 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import javax.sql.DataSource;
+import java.io.IOException;
 
 @Configuration
 @Import( SpringProcessEngineServicesConfiguration.class )

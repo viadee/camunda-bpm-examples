@@ -16,12 +16,12 @@
  */
 package org.camunda.bpm.example.spin.dataformat.configuration;
 
-import java.io.IOException;
-
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
+
+import java.io.IOException;
 
 /**
  * Jackson-specific class for serialization of {@link Money} objects.

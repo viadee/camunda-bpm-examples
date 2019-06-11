@@ -16,11 +16,11 @@
  */
 package org.camunda.bpm.cockpit.plugin.failedjobs;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.camunda.bpm.cockpit.plugin.failedjobs.resources.FailedJobsPluginRootResource;
 import org.camunda.bpm.cockpit.plugin.spi.impl.AbstractCockpitPlugin;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class FailedJobsPlugin extends AbstractCockpitPlugin {
 

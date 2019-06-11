@@ -16,8 +16,6 @@
  */
 package org.camunda.bpm.cockpit.plugin.sample;
 
-import java.util.List;
-
 import org.camunda.bpm.cockpit.Cockpit;
 import org.camunda.bpm.cockpit.db.QueryParameters;
 import org.camunda.bpm.cockpit.db.QueryService;
@@ -26,6 +24,8 @@ import org.camunda.bpm.cockpit.plugin.spi.CockpitPlugin;
 import org.camunda.bpm.cockpit.plugin.test.AbstractCockpitPluginTest;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.List;
 
 /**
 *

@@ -16,8 +16,7 @@
  */
 package com.camunda.bpm.example.spring.soap.start;
 
-import static org.hamcrest.Matchers.is;
-
+import com.camunda.bpm.example.spring.soap.start.v1.*;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -29,13 +28,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.camunda.bpm.example.spring.soap.start.v1.BankAccountServicePortType;
-import com.camunda.bpm.example.spring.soap.start.v1.BankRequestHeader;
-import com.camunda.bpm.example.spring.soap.start.v1.InvalidValueException;
-import com.camunda.bpm.example.spring.soap.start.v1.InvalidValueException_Exception;
-import com.camunda.bpm.example.spring.soap.start.v1.SetAccountNameRequest;
-import com.camunda.bpm.example.spring.soap.start.v1.SetAccountNameResponse;
-import com.camunda.bpm.example.spring.soap.start.v1.StatusType;
+import static org.hamcrest.Matchers.is;
 /**
  * 
  * Test various SOAP calls

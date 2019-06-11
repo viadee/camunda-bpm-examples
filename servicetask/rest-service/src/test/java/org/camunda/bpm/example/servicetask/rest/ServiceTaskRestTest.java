@@ -16,11 +16,6 @@
  */
 package org.camunda.bpm.example.servicetask.rest;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.TaskService;
 import org.camunda.bpm.engine.task.Task;
@@ -29,6 +24,11 @@ import org.camunda.bpm.engine.test.ProcessEngineRule;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author Stefan Hentschel.

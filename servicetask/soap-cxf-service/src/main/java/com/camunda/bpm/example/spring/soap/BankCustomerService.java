@@ -16,20 +16,13 @@
  */
 package com.camunda.bpm.example.spring.soap;
 
-import java.util.logging.Logger;
-
+import com.camunda.bpm.example.spring.soap.v1.*;
 import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.impl.pvm.runtime.ExecutionImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.remoting.soap.SoapFaultException;
 import org.springframework.stereotype.Service;
 
-import com.camunda.bpm.example.spring.soap.v1.BankException;
-import com.camunda.bpm.example.spring.soap.v1.BankException_Exception;
-import com.camunda.bpm.example.spring.soap.v1.BankRequestHeader;
-import com.camunda.bpm.example.spring.soap.v1.GetAccountsRequest;
-import com.camunda.bpm.example.spring.soap.v1.GetAccountsResponse;
+import java.util.logging.Logger;
 
 /**
  * 

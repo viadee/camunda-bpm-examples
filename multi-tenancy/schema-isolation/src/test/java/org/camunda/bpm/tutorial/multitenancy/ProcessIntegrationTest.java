@@ -16,13 +16,6 @@
  */
 package org.camunda.bpm.tutorial.multitenancy;
 
-import static org.camunda.spin.Spin.JSON;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.assertThat;
-
-import java.io.File;
-
 import org.camunda.bpm.BpmPlatform;
 import org.camunda.bpm.engine.ManagementService;
 import org.camunda.bpm.engine.ProcessEngine;
@@ -49,6 +42,13 @@ import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import java.io.File;
+
+import static org.camunda.spin.Spin.JSON;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.junit.Assert.assertThat;
 
 @RunWith(Arquillian.class)
 public class ProcessIntegrationTest {

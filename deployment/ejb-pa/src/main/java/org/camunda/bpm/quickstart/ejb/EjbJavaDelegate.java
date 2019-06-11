@@ -16,13 +16,12 @@
  */
 package org.camunda.bpm.quickstart.ejb;
 
-import java.util.logging.Logger;
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
 
 import javax.ejb.Stateless;
 import javax.inject.Named;
-
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.JavaDelegate;
+import java.util.logging.Logger;
 
 /**
  * This is an Ejb which is invoked form a Service task
