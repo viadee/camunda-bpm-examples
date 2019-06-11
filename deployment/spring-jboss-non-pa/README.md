@@ -76,7 +76,7 @@ We also add an entry to the manifest so that the process engine classes are adde
 ## How to use it?
 
   1. Build it with maven
-  2. Deploy it to JBoss AS 7 (downloaded it from [here][1])
+  2. Deploy it to JBoss AS 7 (download it from [here][1])
   3. Watch out for this console log:
 
 ```bash
@@ -86,4 +86,4 @@ The engine is named default.
 There are currently 0 processes deployed on this engine.
 ```
 
-[1]: http://www.camunda.org/download/
+[1]: https://camunda.org/release/camunda-bpm/jboss/

@@ -1,6 +1,6 @@
 # Generated Task Forms
 
-This Quickstart demonstrates how to use the [Generated Forms](https://docs.camunda.org/manual/latest/user-guide/task-forms/#generated-task-forms) Feature. Generated Forms are HTML5 forms which are generated from Xml Metadata provided in BPMN 2.0 Xml. The metadata can be specified using camunda modeler:
+This Quickstart demonstrates how to use the [Generated Forms](https://docs.camunda.org/manual/7.11/user-guide/task-forms/#generated-task-forms) Feature. Generated Forms are HTML5 forms which are generated from Xml Metadata provided in BPMN 2.0 Xml. The metadata can be specified using camunda modeler:
 
 ![Generated Forms Modeler Screenshot][2]
 
@@ -16,13 +16,13 @@ Both `startEvent` and the `userTask` have form metadata defined:
 <bpmn2:startEvent id="StartEvent_1" name="Loan Request Received">
   <bpmn2:extensionElements>
     <camunda:formData>
-      <camunda:formField id="firstname" label="Firstname" type="string">
+      <camunda:formField id="firstname" label="First Name" type="string">
         <camunda:validation>
           <camunda:constraint name="maxlength" config="25"/>
           <camunda:constraint name="required"/>
         </camunda:validation>
       </camunda:formField>
-      <camunda:formField id="lastname" label="Lastname" type="string">
+      <camunda:formField id="lastname" label="Last Name" type="string">
         <camunda:validation>
           <camunda:constraint name="maxlength" config="25"/>
           <camunda:constraint name="required"/>
