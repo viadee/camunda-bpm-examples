@@ -10,63 +10,37 @@
   <name>Parse BPMN by model API</name>
 
   <properties>
-    <version.camunda>7.10.0</version.camunda>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <version.camunda>7.12.0</version.camunda>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>de.viadee</groupId>
-			<artifactId>viadeeProcessApplicationValidator</artifactId>
-			<version>2.2.1-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>
+  <dependencies>
+      <dependency>
+          <groupId>de.viadee</groupId>
+          <artifactId>viadeeProcessApplicationValidator</artifactId>
+          <version>2.2.1-SNAPSHOT</version>
+          <scope>test</scope>
+      </dependency>
 
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.10.19</version>
-			<scope>test</scope>
-		</dependency>
+    <dependency>
+      <groupId>org.camunda.bpm.model</groupId>
+      <artifactId>camunda-bpmn-model</artifactId>
+      <version>${version.camunda}</version>
+    </dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>4.3.11.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-beans</artifactId>
-			<version>4.3.11.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.camunda.bpm.model</groupId>
-			<artifactId>camunda-bpmn-model</artifactId>
-			<version>${version.camunda}</version>
-		</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
 
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>1.5.0</version>
+      <version>2.9.1</version>
     </dependency>
 
   </dependencies>

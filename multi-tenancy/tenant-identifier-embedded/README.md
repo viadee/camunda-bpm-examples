@@ -34,7 +34,7 @@ public class ModelConsistencyTest {
 
 ## How it works
 
-Please refer to the [User Guide](http://docs.camunda.org/manual/develop/user-guide/process-engine/multi-tenancy/) for details about multi-tenancy.
+Please refer to the [User Guide](http://docs.camunda.org/manual/7.12/user-guide/process-engine/multi-tenancy/) for details about multi-tenancy.
 
 ### Deploy a Process Definition with Tenant-Id
 

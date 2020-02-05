@@ -63,9 +63,21 @@ camForm.on('variables-fetched', function() {
 });
 ```
 
+## Changing the value of the Json Variable in a Java Delegate
+
+In a JavaDelegate, you can access the Json variable with the help of the Spin libraries. You can get a typed variable as `JsonValue` and use the Spin API to set an additional attribute:
+
+```java
+public void execute(DelegateExecution execution) throws Exception {
+  JsonValue jsonCustomer = execution.getVariableTyped("customer");
+  jsonCustomer.getValue().prop("isValid", true);
+  execution.setVariable("customer", jsonCustomer);
+}
+```
+
 ## Running the example
 
-1. [Download a Camunda BPM Distribution](http://camunda.org/download)
+1. [Download a Camunda BPM Distribution](http://camunda.com/download)
 2. Checkout this repository using Git
 3. Build the example using `mvn clean package`
 4. Deploy the `.war` file located in the `target/` folder to the server
