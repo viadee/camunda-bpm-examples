@@ -63,5 +63,4 @@ public class CamundaSpringBootExampleApplicationTest {
         assertTrue("Model inconsistency found. Please check target folder for validation output",
                 ProcessApplicationValidator.findModelInconsistencies(ctx).isEmpty());
     }
-
 }
