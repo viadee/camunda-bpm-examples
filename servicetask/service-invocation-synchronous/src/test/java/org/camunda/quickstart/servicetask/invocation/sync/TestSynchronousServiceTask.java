@@ -25,12 +25,14 @@ import static junit.framework.Assert.fail;
 import java.util.Collections;
 import java.util.Map;
 
+import de.viadee.bpm.vPAV.ProcessApplicationValidator;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.TaskService;
 import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.camunda.bpm.engine.task.Task;
 import org.camunda.bpm.engine.test.Deployment;
 import org.camunda.bpm.engine.test.ProcessEngineRule;
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -124,5 +126,10 @@ public class TestSynchronousServiceTask {
     assertNull(variables.get(SynchronousServiceTask.PRICE_VAR_NAME));
 
   }
-
+  @Test
+  public void validateModel() {
+    // Should find one UR anomaly
+    Assert.assertTrue("Model inconsistency found. Please check target folder for validation output",
+            ProcessApplicationValidator.findModelInconsistencies().isEmpty());
+  }
 }

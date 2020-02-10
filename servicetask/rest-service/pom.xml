@@ -81,6 +81,13 @@
       <version>1.7.12</version>
     </dependency>
 
+    <!-- viadee Process Application Validator -->
+    <dependency>
+      <groupId>de.viadee</groupId>
+      <artifactId>viadeeProcessApplicationValidator</artifactId>
+      <version>3.0.2</version>
+    </dependency>
+
   </dependencies>
 
   <repositories>

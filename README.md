@@ -9,8 +9,12 @@ This is a fork of https://github.com/camunda/camunda-bpm-examples with the singl
 - [Camunda Process Engine and Spring Boot](deployment/spring-boot)
 - [Simple Servlet Process Application Example](deployment/servlet-pa)
 - [Serialized Objects in Embedded Forms](usertask/task-form-embedded-serialized-java-object)
+- [Rest Service](servicetask/rest-service)
 - [Asynchronous Service Invocation](servicetask/service-invocation-asynchronous)
+- [Synchronous Service Invocation](servicetask/service-invocation-synchronous)
 - [Multi-Tenancy with Tenant Identifiers for Embedded Process Engine](multi-tenancy/tenant-identifier-embedded)
+- [Spring Boot Web application with embedded Camunda engine](spring-boot-starter/example-web)
+
 
 ### Contribute!
 

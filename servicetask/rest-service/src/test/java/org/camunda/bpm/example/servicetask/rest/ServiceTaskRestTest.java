@@ -21,6 +21,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.HashMap;
 import java.util.Map;
 
+import de.viadee.bpm.vPAV.ProcessApplicationValidator;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.TaskService;
 import org.camunda.bpm.engine.task.Task;
@@ -75,4 +76,9 @@ public class ServiceTaskRestTest {
     Assert.assertFalse(isHoliday);
   }
 
+  @Test
+  public void validateModel() {
+    Assert.assertTrue("Model inconsistency found. Please check target folder for validation output",
+            ProcessApplicationValidator.findModelInconsistencies().isEmpty());
+  }
 }

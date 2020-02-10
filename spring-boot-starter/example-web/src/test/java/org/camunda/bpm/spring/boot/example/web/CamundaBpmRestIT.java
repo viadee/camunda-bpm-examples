@@ -16,8 +16,10 @@
  */
 package org.camunda.bpm.spring.boot.example.web;
 
+import de.viadee.bpm.vPAV.ProcessApplicationValidator;
 import org.camunda.bpm.engine.rest.dto.repository.ProcessDefinitionDto;
 import org.camunda.bpm.spring.boot.starter.property.CamundaBpmProperties;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,5 +69,11 @@ public class CamundaBpmRestIT {
       return new RestTemplateBuilder().basicAuthentication("user", password).build();
     }
 
+  }
+
+  @Test
+  public void validateModel() {
+    Assert.assertTrue("Model inconsistency found. Please check target folder for validation output",
+            ProcessApplicationValidator.findModelInconsistencies().isEmpty());
   }
 }
