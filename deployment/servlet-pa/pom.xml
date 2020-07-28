@@ -29,13 +29,13 @@
       <version>${version.servlet-api.javax}</version>
       <scope>provided</scope>
     </dependency>
-    
+
     <!-- viadee Process Application Validator -->
     <dependency>
-  		<groupId>de.viadee</groupId>
-  		<artifactId>viadeeProcessApplicationValidator</artifactId>
-  		<version>3.0.5-SNAPSHOT</version>
-	</dependency>
+      <groupId>de.viadee</groupId>
+      <artifactId>viadeeProcessApplicationValidator</artifactId>
+      <version>3.0.5</version>
+    </dependency>
   </dependencies>
 
 </project>

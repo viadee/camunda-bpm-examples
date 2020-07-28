@@ -20,7 +20,7 @@
       <url>https://app.camunda.com/nexus/content/groups/public</url>
     </repository>
   </repositories>
-  
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -32,14 +32,14 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.camunda.bpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -60,13 +60,13 @@
       <version>3.2.4</version>
       <scope>test</scope>
     </dependency>
-    
+
     <!-- viadee Process Application Validator -->
     <dependency>
-  		<groupId>de.viadee</groupId>
-  		<artifactId>viadeeProcessApplicationValidator</artifactId>
-  		<version>3.0.5-SNAPSHOT</version>
-	</dependency>
+      <groupId>de.viadee</groupId>
+      <artifactId>viadeeProcessApplicationValidator</artifactId>
+      <version>3.0.5</version>
+    </dependency>
   </dependencies>
 
 </project>
